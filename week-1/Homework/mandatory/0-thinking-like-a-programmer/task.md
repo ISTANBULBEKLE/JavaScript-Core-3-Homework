@@ -27,11 +27,18 @@ After you've watched these videos I'd like you to answer these questions
 ## 1. What do you think the most important quality for a programmer is?
 
 <!-- Write your answer here -->
+The most important quality for a programmer is to be a good problem solver. In fact, everything a programmer does is about finding solution for a problem sets. So, it is outmost importance for a programmer to be a problem solving. To be a good problem solver you need to have a problem solving framework.
 
 ## 2. When trying to solve a challenge, what should you do first?
 
 <!-- Write your answer here -->
 
+Each programmer might have a different problem solving framework, however the first step of problem solving is understanding the problem. Usually we tend to jump into the problem begin solving. But, without understanding the problem and its foundation, we might loose a lot of time if we jump into solving right away. We need to keep time for understanding firstly. 
+
 ## 3. What should you do if you get stuck?
 
 <!-- Write your answer here -->
+
+It is very common to get stuck during a programing problem. If we have a standing problem solving framework, it is no problem. We can deal with that. If we stuck during problem solving, one way yo continue is debugging. A programmer must have skills in debugging and handling error and program faults.  
+
+
