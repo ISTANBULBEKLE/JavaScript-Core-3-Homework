@@ -65,4 +65,4 @@ console.log(y);
 
 What will be the output of this code. Explain your answer in 50 words or less.
 
-A:When it comes to line 52 the f1(x) function will be called with the parameter value x (const x +9) . The function will implemented with a return value but will not be console.logged. When it comes to line 53const x will be console.logged with its value as 9, because it is defined in global scope.
+A:When it comes to line 52 the f1(x) function will be called with the parameter value x (const x +9) . The function will implemented with a return value but will not be console.logged. When it comes to line 53const x will be console.logged with its value as 9, because it is defined in global scope. We will another  situation with the lines 55-63. const y is defined in global scope abut its value will be added with 1 in the function. As it is put into function as a parameter and function has a return statement, at line 63 we will have the console logged as {x:10} object.
