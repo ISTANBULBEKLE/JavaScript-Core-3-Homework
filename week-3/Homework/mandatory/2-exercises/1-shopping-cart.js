@@ -11,6 +11,11 @@ The output of running your code should be:
 
 class ShoppingCart {
   // Add your code here
+  constructor(){
+    this.toiletRoll = toiletRoll;
+    this.pasta = pasta;
+    this.eggs = eggs;
+  }
 
   cartContains() {
     // Use console.log() to output everything contained in your cart
