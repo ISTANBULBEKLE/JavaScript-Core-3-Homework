@@ -31,7 +31,7 @@ class Person {
 
     greeting() {
         const {name} = this;
-        console.log(`Hi! I'm  ${this.name}.`)
+        console.log(`Hi! I'm  ${this.name}.`);
     }
 
 }
