@@ -30,7 +30,9 @@ class Person {
     }
 
     greeting() {
-        const {name} = this;
+        const {
+            name
+        } = this;
         console.log(`Hi! I'm  ${this.name}.`);
     }
 
