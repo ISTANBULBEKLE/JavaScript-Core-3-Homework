@@ -1,24 +1,66 @@
 class MusicPlayer {
     // Add your code here
+    constructor(song, artist) {
+        const musicList = [];
+        this.song = song;
+        this.artist = artist;
 
+    }
+
+    add({
+        song,
+        artist
+    }) {
+        const {
+            list
+        } = this;
+        const totalList = musicList.push({song}, {artist})
+        console.log(totalList);
+    }
+
+    play() {
+        const {
+            song,
+            artist
+        } = this;
+        console.log(`Currently playing: ${this.song} by ${this.artist}`);
+    }
+
+    skip() {
+        const {
+            song,
+            artist
+        } = this;
+        console.log(`Currently playing: ${this.song} by ${this.artist}`);
+    }
+
+    previous() {
+
+        const {
+            song,
+            artist
+        } = this;
+        console.log(`Currently playing: ${this.song} by ${this.artist}`)
+
+    }
 }
 
 let myMusicPlayer = new MusicPlayer(); // Create an empty playlist
 
 // Add some songs to your playlist
-myMusicPlayer.add("Bohemian Rhapsody","Queen");
-myMusicPlayer.add("Yesterday","The Beatles");
-myMusicPlayer.add("Vogue","Madonna");
+myMusicPlayer.add("Bohemian Rhapsody", "Queen");
+myMusicPlayer.add("Yesterday", "The Beatles");
+myMusicPlayer.add("Vogue", "Madonna");
 
-myMusicPlayer.play();      // Output: "Currently playing: Bohemian Rhapsody by Queen"
+myMusicPlayer.play(); // Output: "Currently playing: Bohemian Rhapsody by Queen"
 
-myMusicPlayer.skip();      // Output: "Currently playing: Yesterday by The Beatles"
+myMusicPlayer.skip(); // Output: "Currently playing: Yesterday by The Beatles"
 
-myMusicPlayer.previous();  // Output: "Currently playing: Bohemian Rhapsody by Queen"
+myMusicPlayer.previous(); // Output: "Currently playing: Bohemian Rhapsody by Queen"
 
-myMusicPlayer.skip();      // Output: "Currently playing: Yesterday by The Beatles"
+myMusicPlayer.skip(); // Output: "Currently playing: Yesterday by The Beatles"
 
-myMusicPlayer.skip();      // Output: "Currently playing: Vogue by Madonna"
+myMusicPlayer.skip(); // Output: "Currently playing: Vogue by Madonna"
 
 
 /*
@@ -40,11 +82,3 @@ Optional 2: Can you implement the shuffle functionality for your music player?
 This means the order the songs are played in will be random, but each song will only play once.
 
  */
-
-
-
-
-
-
-
-
