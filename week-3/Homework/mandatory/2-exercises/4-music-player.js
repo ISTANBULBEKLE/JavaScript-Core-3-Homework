@@ -4,7 +4,6 @@ class MusicPlayer {
         const musicList = [];
         this.song = song;
         this.artist = artist;
-
     }
 
     add({
@@ -14,7 +13,11 @@ class MusicPlayer {
         const {
             list
         } = this;
-        const totalList = musicList.push({song}, {artist})
+        const totalList = musicList.push({
+            song
+        }, {
+            artist
+        });
         console.log(totalList);
     }
 
@@ -35,13 +38,11 @@ class MusicPlayer {
     }
 
     previous() {
-
         const {
             song,
             artist
         } = this;
-        console.log(`Currently playing: ${this.song} by ${this.artist}`)
-
+        console.log(`Currently playing: ${this.song} by ${this.artist}`);
     }
 }
 
@@ -61,7 +62,6 @@ myMusicPlayer.previous(); // Output: "Currently playing: Bohemian Rhapsody by Qu
 myMusicPlayer.skip(); // Output: "Currently playing: Yesterday by The Beatles"
 
 myMusicPlayer.skip(); // Output: "Currently playing: Vogue by Madonna"
-
 
 /*
 
