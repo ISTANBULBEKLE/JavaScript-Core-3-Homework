@@ -28,14 +28,14 @@ class ATM {
         console.log(this.balance);
     }
 
-    check_balance(){
+    check_balance() {
         const {
             balance
         } = this;
         console.log(this.balance);
     }
 
-    make_withdrawl(m){
+    make_withdrawl(m) {
         const {
             balance
         } = this;
