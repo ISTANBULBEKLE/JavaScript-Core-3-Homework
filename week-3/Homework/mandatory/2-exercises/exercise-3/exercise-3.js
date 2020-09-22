@@ -15,7 +15,7 @@ let totalReceipt = 0;
  console.log(`QTY    ITEM        TOTAL`);
  order.forEach(({ itemName, quantity, unitPrice }) => {
    console.log(`${quantity} ${itemName} ${unitPrice}`);
-   totalReceipt += `${unitPrice}`;
+   totalReceipt += unitPrice;
  });
 
  console.log(`Total RECEIPT: ${totalReceipt}`);
