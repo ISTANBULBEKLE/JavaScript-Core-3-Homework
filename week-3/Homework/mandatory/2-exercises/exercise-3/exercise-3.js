@@ -7,29 +7,15 @@ let order = [
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
 
-// const [a, b, c, d, e, f] = order;
+
 const { itemName, quantity, unitPrice } = order;
 
-function receiptForOrders({ itemName, quantity, unitPrice }) {
-  const totalReceipt = 0;
-  order.forEach(({ itemName, quantity, unitPrice }) =>
-    console.log(
-      `The unit price of ${itemName} is ${unitPrice}, there is/are ${quantity} unit/units and it costs ${
-        quantity * unitPrice
-      }. The total receipt costs ${(totalReceipt += quantity * unitPrice)}`
-    )
-  );
-}
+let totalReceipt = 0;
 
-console.log(receiptForOrders(order));
+ console.log(`QTY    ITEM        TOTAL`);
+ order.forEach(({ itemName, quantity, unitPrice }) => {
+   console.log(`${quantity} ${itemName} ${unitPrice}`);
+   totalReceipt += unitPrice;
+ });
 
-/* function calculateThePrice({ quantity, unitPrice }) {
-  let newList = {};
-  newList = order.forEach(({ quantity, unitPrice }) => {
-    quantity * unitPrice;
-  });
-  console.log(newList);
-  return newList;
-}
-console.log(calculateThePrice(order));
- */
+ console.log(`Total RECEIPT: ${totalReceipt}`);
