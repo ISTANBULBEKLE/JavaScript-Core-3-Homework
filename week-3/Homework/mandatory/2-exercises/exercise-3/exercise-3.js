@@ -11,17 +11,17 @@ let order = [
 const { itemName, quantity, unitPrice } = order;
 
 function receiptForOrders({ itemName, quantity, unitPrice }) {
-  const totalReceipt = 0; 
-    order.forEach(({ itemName, quantity, unitPrice }) => console.log (`The unit price of ${itemName} is ${unitPrice}, there is/are ${quantity} unit/units and it costs ${quantity * unitPrice}. The total receipt costs ${totalReceipt += quantity * unitPrice}`));
-   
+  const totalReceipt = 0;
+  order.forEach(({ itemName, quantity, unitPrice }) =>
+    console.log(
+      `The unit price of ${itemName} is ${unitPrice}, there is/are ${quantity} unit/units and it costs ${
+        quantity * unitPrice
+      }. The total receipt costs ${(totalReceipt += quantity * unitPrice)}`
+    )
+  );
 }
 
-console.log (receiptForOrders(order));
-
-
-
-
-
+console.log(receiptForOrders(order));
 
 /* function calculateThePrice({ quantity, unitPrice }) {
   let newList = {};

@@ -64,6 +64,18 @@ let hogwarts = [
   },
 ];
 
-const {firstName, lastName, house, pet, occupation} = hogwarts;
+const { firstName, lastName, house, pet, occupation } = hogwarts;
 
-const houseGryffindor = hogwarts.filter(({house})=>{Gryffindor});
+// This is the solution for Task 1
+hogwarts.forEach(({ firstName, lastName, house }) => {
+  if (house === "Gryffindor") {
+    console.log(`${firstName} ${lastName}`);
+  }
+});
+
+// This is the solution for Task 2
+hogwarts.forEach(({ firstName, lastName, pet, occupation }) => {
+  if (occupation === "Teacher" && pet !== null) {
+    console.log(`${firstName} ${lastName}`);
+  }
+});
